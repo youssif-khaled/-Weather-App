@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/index_style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="Home">
+      <nav>
+        <div class="logo">
+          <div class="f-child">
+            <img src="img/10587358431548329956.svg" alt="" />
+          </div>
+          <div class="s-child">
+            <h5>Weather</h5>
+            <span>tagline goes here</span>
+          </div>
+        </div>
+        <div class="list">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>News</a></li>
+            <li><a>Live Camera</a></li>
+            <li><a>Photos</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="search">
+        <input
+          type="search"
+          id="search"
+          placeholder="Find Your Location..."
+          onkeyup="search2(this.value)"
+        />
+        <button>Find</button>
+      </div>
+      <div class="container">
+        <div class="parent">
+          <div class="child">
+            <h5 id="day"></h5>
+            <span id="date"></span>
+          </div>
+          <div class="s-child">
+            <span id="city"></span>
+            <div class="icon-temp">
+              <h1 id="temp"></h1>
+              <div id="icon"></div>
+            </div>
+          </div>
+          <div class="t-child">
+            <span id="condition"></span>
+          </div>
+          <div class="f-child" id="umbrella"></div>
+        </div>
+
+        <div class="parent">
+            <div class="child">
+              <h5 id="tomorrow"></h5>
+              <span id="date2"></span>
+            </div>
+            <div class="s-child">
+              <span id="city2"></span>
+              <div class="icon-temp">
+                <h1 id="temp2"></h1>
+                <div id="icon2"></div>
+              </div>
+            </div>
+            <div class="t-child">
+              <span id="condition2"></span>
+            </div>
+            <div class="f-child" id="umbrella2"></div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+  </body>
+</html>
